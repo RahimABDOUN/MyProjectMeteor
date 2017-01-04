@@ -1,0 +1,19 @@
+<template name="formulaire">
+<form id="monFormulaire">
+<p>Nom <input type='text' id="nom"></p>
+<p>Domaine <input type='text' id="Domaine"></p>
+<p><input type='submit'></p>
+</form>
+</template>
+<template name="liste">
+{{#each mesFiches}}
+{{>fiche}}
+{{/each}}
+</template>
+<template name="fiche">
+{{#if nomUser}}
+<p>Nom : {{nomUser}}</p>
+<p>Domaine : {{domaineUser}}</p>
+<br>
+{{/if}}
+</template>
